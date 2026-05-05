@@ -9,10 +9,24 @@ body {
 }
 
 .left-panel {
-    display: flex;
     flex: 1 1 auto;
+    background-image: url("../img/green-leaf-plant.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .right-panel {
     flex: 2 1 auto;
+}
+
+.logo-title {
+    position: absolute;
+    top: 33%;
+    background-color: #00000081;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
 }
