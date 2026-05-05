@@ -30,6 +30,7 @@ body {
 .logo-title {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     top: 25%;
     background-color: #00000081;
@@ -41,6 +42,6 @@ body {
     color: white;
 }
 
-.title {
-    align-self: center;
+.logo {
+    max-height: 100%;
 }
