@@ -28,12 +28,19 @@ body {
 }
 
 .logo-title {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    top: 33%;
+    top: 25%;
     background-color: #00000081;
     width: 100%;
-    text-align: center;
+    height: 6rem;
+    padding: 10px 0;
     font-family: NorseBold;
     font-size: 4rem;
     color: white;
+}
+
+.title {
+    align-self: center;
 }
