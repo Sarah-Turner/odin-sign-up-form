@@ -4,15 +4,15 @@ html {
 
 body {
     display: flex;
+    margin: 0;
     height: 100%;
 }
 
 .left-panel {
+    display: flex;
     flex: 1 1 auto;
-    outline: 1px solid red;
 }
 
 .right-panel {
     flex: 2 1 auto;
-    outline: 1px solid black;
 }
