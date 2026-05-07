@@ -21,7 +21,7 @@ body {
 }
 
 .left-panel {
-    flex: 1 1 auto;
+    flex: 1 1 0;
     background-image: url("../img/green-leaf-plant.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +30,7 @@ body {
 }
 
 .right-panel {
-    flex: 2 1 auto;
+    flex: 2 1 0;
     display: flex;
     flex-direction: column;
 }
@@ -69,10 +69,20 @@ body {
 .hero-section,
 .form-section,
 .submission-section {
-    flex: 1 1 auto;
+    flex: 1 1 0;
+    padding: 40px;
 }
 
 .hero-section,
 .submission-section {
     background-color: #eeeeee;
+}
+
+.hero-section {
+    padding-right: 200px;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
