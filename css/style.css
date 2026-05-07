@@ -6,6 +6,11 @@
 
 html {
     height: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body {
@@ -26,6 +31,8 @@ body {
 
 .right-panel {
     flex: 2 1 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo-title {
@@ -57,4 +64,15 @@ body {
 
 .attr-link {
     color: white;
+}
+
+.hero-section,
+.form-section,
+.submission-section {
+    flex: 1 1 auto;
+}
+
+.hero-section,
+.submission-section {
+    background-color: #eeeeee;
 }
