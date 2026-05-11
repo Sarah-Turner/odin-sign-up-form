@@ -4,6 +4,13 @@
     font-display: block;
 }
 
+:root {
+    --form-width: 300px;
+    --form-label-size: 0.9rem;
+    --form-font-size: 1rem;
+    --hero-font-size: 1.5rem;
+}
+
 html {
     height: 100%;
     box-sizing: border-box;
@@ -84,6 +91,41 @@ body {
 }
 
 .hero-text {
-    font-size: 1.5rem;
+    font-size: var(--hero-font-size);
+    font-weight: bold;
+}
+
+.form-section {
+    padding-right: 250px;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 12px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+label {
+    font-size: var(--form-label-size);
+}
+
+input {
+    width: var(--form-width);
+    padding: 5px;
+    font-size: var(--form-font-size);
+}
+
+.call-to-action {
+    font-size: var(--hero-font-size);
     font-weight: bold;
 }
