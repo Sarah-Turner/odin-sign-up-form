@@ -21,7 +21,7 @@
         </div>
         <div class="form-section">
             <p class="call-to-action">Let's do this!</p>
-            <form action="#" method="get" class="signup-form">
+            <form action="#" method="get" class="signup-form" id="signup-form">
                 <div class="form-item">
                     <label for="first-name">FIRST NAME</label>
                     <input type="text" name="first-name" id="first-name">
@@ -48,7 +48,10 @@
                 </div>
             </form>
         </div>
-        <div class="submission-section"></div>
+        <div class="submission-section">
+            <button class="submit-button" type="submit" form="signup-form">Create Account</button>
+            <p class="log-in-text">Already have an account? <a href="#" class="log-in-link">Log in</a></p>
+        </div>
     </div>
 </body>
 </html>

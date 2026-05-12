@@ -54,7 +54,7 @@ body {
     padding: 10px 0;
     font-family: NorseBold;
     font-size: 4rem;
-    color: white;
+    color: #ffffff;
 }
 
 .logo {
@@ -65,19 +65,19 @@ body {
     position: absolute;
     left: 30%;
     bottom: 10px;
-    color: white;
+    color: #ffffff;
     font-size: 0.8rem;
 }
 
 .attr-link {
-    color: white;
+    color: #ffffff;
 }
 
 .hero-section,
 .form-section,
 .submission-section {
     flex: 1 1 0;
-    padding: 40px;
+    padding: 20px 40px;
 }
 
 .hero-section,
@@ -86,7 +86,7 @@ body {
 }
 
 .hero-section {
-    padding-top: 100px;
+    padding-top: 30px;
     padding-right: 200px;
 }
 
@@ -98,7 +98,7 @@ body {
 .form-section {
     padding-top: 20px;
     padding-right: 250px;
-    box-shadow: 0 10px 10px -1px rgb(219, 219, 219);
+    box-shadow: 0 10px 10px -1px #dbdbdb;
     position: relative;
     z-index: 0;
 }
@@ -127,22 +127,63 @@ input {
     width: var(--form-width);
     padding: 5px;
     font-size: var(--form-font-size);
-    border: 1px solid rgb(208, 208, 208);
+    border: 1px solid #d0d0d0;
     border-radius: 5px;
 }
 
 input:focus {
-    outline: 1px solid rgb(0, 149, 255);
-    box-shadow: 0 0 7px 1px rgb(206, 206, 206);
+    outline: 1px solid #0095ff;
+    box-shadow: 0 0 7px 1px #cecece;
 }
 
 #pwd:user-invalid,
 #pwd-confirm:user-invalid {
-    outline: 1px solid rgb(255, 0, 0);
+    outline: 1px solid #ff0000;
 }
 
 .call-to-action {
     font-size: var(--hero-font-size);
     font-weight: bold;
     margin-top: 0;
+}
+
+.submission-section {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.submit-button {
+    position: relative;
+    padding: 15px 50px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #596D48;
+    box-shadow: 0 5px 10px 1px #c6c6c6;
+}
+
+.submit-button:hover {
+    background-color: #597848;
+}
+
+.submit-button:active {
+    background-color: #597848;
+    top: 1px;
+}
+
+.log-in-link:link,
+.log-in-link:visited,
+.log-in-link:active {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.log-in-link:hover {
+    color: #6f885a;
 }
